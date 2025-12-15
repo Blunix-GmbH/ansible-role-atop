@@ -1,0 +1,6 @@
+# Seconds between samples (default: 30)
+atop_log_interval: 30
+# Days to keep logs (default: 14)
+atop_log_age: 14
+# Log directory
+atop_log_dir: /var/log/atop

@@ -1,0 +1,5 @@
+- name: setup atop
+  hosts: all
+  roles:
+    # Install and configure atop with defaults
+    - role: ansible-role-atop
