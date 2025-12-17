@@ -44,6 +44,8 @@ Production playbooks include the role without overrides. The example is split in
 - Tests in `example/tests/`:
   - <a href="https://github.com/Blunix-GmbH/ansible-role-atop/blob/main/example/tests/cus-dev-prod-web-1/test_default.py" target="_blank"><code>cus-dev-prod-web-1/test_default.py</code></a>: checks atop is installed, service is active, and basic defaults are in place.
 
+The directory `test/` contains an example `play.yml` as well as `inventory/group_vars/`, if applicable to the role. the script `example/run-tests.sh` creates a IONOS cloud instance with terraform, uses the example inventory and playbook to run the role and then run pytest tests located in `example/tests/`. Destroy the terraform using `./run-tests.sh -d`.
+
 ## Author Information
 
 Blunix GmbH Berlin  
