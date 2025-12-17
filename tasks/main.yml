@@ -5,7 +5,7 @@
 
 - name: template /etc/default/atop file
   template:
-    src: etc/default/atop.j2
+    src: templates/etc/default/atop.j2
     dest: /etc/default/atop
     owner: root
     group: root
